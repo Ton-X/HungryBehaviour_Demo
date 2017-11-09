@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247ef8016dc1df04e8cf4423666a3dd5, type: 3}
+  m_Name: DinoAI
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114191462689586010}
+  - {fileID: 114698865814268882}
+  - {fileID: 114221540063786870}
+  - {fileID: 114199918407995234}
+  - {fileID: 114114993514401456}
+  - {fileID: 114992471239253396}
+  - {fileID: 114239119887970328}
+  - {fileID: 114292952984424490}
+  btEditorParams: {fileID: 114580986463304800}
+  btEditorBlackboard: {fileID: 114235601271111498}
+--- !u!114 &114114993514401456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd42bf1bb9acf7f4096832c8fe4db035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 615
+    y: 321
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114191462689586010}
+  nodeName: FindCloserFood
+  phNodeName: 
+--- !u!114 &114191462689586010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e635c87f9d150d4c81b8bae978b4928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Sequence
+  nodeRect:
+    serializedVersion: 2
+    x: 724
+    y: 23
+    width: 120
+    height: 50
+  children:
+  - {fileID: 114698865814268882}
+  - {fileID: 114221540063786870}
+  - {fileID: 114199918407995234}
+  - {fileID: 114114993514401456}
+  - {fileID: 114992471239253396}
+  - {fileID: 114239119887970328}
+  - {fileID: 114292952984424490}
+  parent: {fileID: 0}
+--- !u!114 &114199918407995234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8897e46e0874be84580534573c52e04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 377
+    y: 289
+    width: 200
+    height: 80
+  children: []
+  parent: {fileID: 114191462689586010}
+  nodeName: ISeeFood
+  phNodeName: 
+  range: 3
+--- !u!114 &114221540063786870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4add1eae76ed93a48ac4d8788ebd6213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 321
+    y: 177
+    width: 200
+    height: 80
+  children: []
+  parent: {fileID: 114191462689586010}
+  nodeName: Wander
+  phNodeName: 
+  wanderSpeed: 1.6
+--- !u!114 &114235601271111498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f97c66de6d8d0948b8487c94cf64268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackboard:
+  - TrueSpeed
+  - HumanPriority
+--- !u!114 &114239119887970328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b1e1a99ee7ea546b9581d345dbdad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 1080
+    y: 214
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114191462689586010}
+  nodeName: ReachFood
+  phNodeName: 
+--- !u!114 &114292952984424490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ad7ae6862ce0546a8c6c1fb9d634f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 1090
+    y: 85
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114191462689586010}
+  nodeName: Eat
+  phNodeName: 
+--- !u!114 &114580986463304800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6886b37f13793459649a8b66b9d5c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatDictionary:
+    keys: []
+    values: []
+  intDictionary:
+    keys: []
+    values: 
+  boolDictionary:
+    keys:
+    - WanderingEnabled
+    values: 01
+--- !u!114 &114698865814268882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd114b9acd06f7047af01c6a2398905f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 295
+    y: 87
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114191462689586010}
+  nodeName: AmIHungry
+  phNodeName: 
+--- !u!114 &114992471239253396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6266528863b35458c493c1a7c9e835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 863
+    y: 314
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114191462689586010}
+  nodeName: ISeeHuman
+  phNodeName: 

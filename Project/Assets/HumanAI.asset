@@ -1,0 +1,362 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247ef8016dc1df04e8cf4423666a3dd5, type: 3}
+  m_Name: HumanAI
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114340645953386136}
+  - {fileID: 114363259480611696}
+  - {fileID: 114368184869229090}
+  - {fileID: 114906799941674104}
+  - {fileID: 114483873730822568}
+  - {fileID: 114079926727463786}
+  - {fileID: 114380053515311888}
+  - {fileID: 114493645433532324}
+  - {fileID: 114415983906484022}
+  - {fileID: 114539923415583488}
+  - {fileID: 114403089648901804}
+  - {fileID: 114420017870285646}
+  - {fileID: 114410190858854590}
+  btEditorParams: {fileID: 114645074898861988}
+  btEditorBlackboard: {fileID: 114108615113247290}
+--- !u!114 &114079926727463786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47960a76fc525c479e75d888511680d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Inverter
+  nodeRect:
+    serializedVersion: 2
+    x: 635
+    y: 492
+    width: 120
+    height: 50
+  children: []
+  parent: {fileID: 114906799941674104}
+  child: {fileID: 114403089648901804}
+--- !u!114 &114108615113247290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f97c66de6d8d0948b8487c94cf64268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackboard:
+  - TrueSpeed
+  - ThreatDistance
+--- !u!114 &114340645953386136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e635c87f9d150d4c81b8bae978b4928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Sequence
+  nodeRect:
+    serializedVersion: 2
+    x: 803
+    y: 36
+    width: 120
+    height: 50
+  children:
+  - {fileID: 114363259480611696}
+  - {fileID: 114368184869229090}
+  - {fileID: 114906799941674104}
+  - {fileID: 114380053515311888}
+  - {fileID: 114493645433532324}
+  - {fileID: 114415983906484022}
+  - {fileID: 114539923415583488}
+  parent: {fileID: 0}
+--- !u!114 &114363259480611696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd114b9acd06f7047af01c6a2398905f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 350
+    y: 160
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114340645953386136}
+  nodeName: AmIHungry
+  phNodeName: 
+--- !u!114 &114368184869229090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4add1eae76ed93a48ac4d8788ebd6213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 383
+    y: 254
+    width: 200
+    height: 80
+  children: []
+  parent: {fileID: 114340645953386136}
+  nodeName: Wander
+  phNodeName: 
+  wanderSpeed: 1.5
+--- !u!114 &114380053515311888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8897e46e0874be84580534573c52e04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 758
+    y: 346
+    width: 200
+    height: 80
+  children: []
+  parent: {fileID: 114340645953386136}
+  nodeName: ISeeFood
+  phNodeName: 
+  range: 4
+--- !u!114 &114403089648901804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31d562f7446b8e4f8660932c8f0e6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Selector
+  nodeRect:
+    serializedVersion: 2
+    x: 635
+    y: 592
+    width: 120
+    height: 50
+  children:
+  - {fileID: 114420017870285646}
+  - {fileID: 114410190858854590}
+  parent: {fileID: 114079926727463786}
+--- !u!114 &114410190858854590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f58fda18d40c6342945ee9562503b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 743
+    y: 706
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114403089648901804}
+  nodeName: Escape
+  phNodeName: 
+--- !u!114 &114415983906484022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b1e1a99ee7ea546b9581d345dbdad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 1113
+    y: 262
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114340645953386136}
+  nodeName: ReachFood
+  phNodeName: 
+--- !u!114 &114420017870285646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a5fc97d72c41e439d215e0c9d36042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 503
+    y: 694
+    width: 200
+    height: 100
+  children: []
+  parent: {fileID: 114403089648901804}
+  nodeName: Hide
+  phNodeName: 
+  hideRange: 3
+  hidingTime: 2
+--- !u!114 &114483873730822568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8d0d4c38fd5c741b8fc5dab13af0d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 408
+    y: 470
+    width: 200
+    height: 80
+  children: []
+  parent: {fileID: 114906799941674104}
+  nodeName: IAmSafe
+  phNodeName: 
+  safeRange: 4.2
+--- !u!114 &114493645433532324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd42bf1bb9acf7f4096832c8fe4db035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 991
+    y: 349
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114340645953386136}
+  nodeName: FindCloserFood
+  phNodeName: 
+--- !u!114 &114539923415583488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ad7ae6862ce0546a8c6c1fb9d634f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Behaviour Node
+  nodeRect:
+    serializedVersion: 2
+    x: 1186
+    y: 162
+    width: 200
+    height: 60
+  children: []
+  parent: {fileID: 114340645953386136}
+  nodeName: Eat
+  phNodeName: 
+--- !u!114 &114645074898861988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6886b37f13793459649a8b66b9d5c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatDictionary:
+    keys: []
+    values: []
+  intDictionary:
+    keys: []
+    values: 
+  boolDictionary:
+    keys:
+    - WanderingEnabled
+    - GoingSafe
+    - Hidden
+    - Escaping
+    values: 00010001
+--- !u!114 &114906799941674104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31d562f7446b8e4f8660932c8f0e6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Selector
+  nodeRect:
+    serializedVersion: 2
+    x: 550
+    y: 376
+    width: 120
+    height: 50
+  children:
+  - {fileID: 114483873730822568}
+  - {fileID: 114079926727463786}
+  parent: {fileID: 114340645953386136}

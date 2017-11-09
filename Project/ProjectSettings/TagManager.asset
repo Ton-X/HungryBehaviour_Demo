@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Dinosaur
+  - Food
+  - Grass
+  - Bush
+  - Rock
+  - Home
+  - Water
+  - Human
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Food
+  - Obstacle
+  - Human
+  - Dinosaur
+  - Hideout
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2326110547
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Food
+    uniqueID: 2319740693
+    locked: 0
+  - name: Rock
+    uniqueID: 1034971707
+    locked: 0
+  - name: Characters
+    uniqueID: 1233937615
+    locked: 0
+  - name: Bush
+    uniqueID: 1919348881
+    locked: 0
+  - name: UI
+    uniqueID: 1977222331
+    locked: 0
